@@ -17,12 +17,10 @@ function Continent () {
   <>
   <h1>Hello this is the page for {selected}</h1>
   <img src={"/images/" + continents[selected].image}/>
- 
   <ul>
       {continents[selected].countries.map(country => <li>{country.name}</li>)}
   </ul>
    
-  
   </>
   )
 }

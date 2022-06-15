@@ -1,5 +1,6 @@
 import React from 'react'
 import continents from '../../data/continents'
+import { Link } from 'react-router-dom'
 
 const continentsArr = Object.keys(continents)
 function Nav() {
@@ -8,7 +9,8 @@ function Nav() {
     <div>
       <h2>Nav</h2>
       <ul>
-    {continentsArr.map(name =>  <li>{name}</li>)}
+  
+    {continentsArr.map(name => <Link to ={`/continents/${name}`}> <li>{name}</li></Link> )}
 
       </ul>
     </div>
